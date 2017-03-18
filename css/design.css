@@ -1,0 +1,659 @@
+
+/*http://www.colorhunt.co/c/44559*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('font/icomoon.eot?3bx9i');
+  src:  url('font/icomoon.eot?3bx9i#iefix') format('embedded-opentype'),
+    url('font/icomoon.ttf?3bx9i') format('truetype'),
+    url('font/icomoon.woff?3bx9i') format('woff'),
+    url('font/icomoon.svg?3bx9i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	background: #F59D2A;
+	position: relative;
+	height: 100vh;
+	background-image: radial-gradient(circle, #FFC165 0%, #FA9026 50%, #FB6C1F 100%);
+}
+
+header{
+	width: 100%;
+	height: 35px;
+	background: #2c3d4f ;
+	border-bottom: solid 2px white;
+}
+
+header h1 {
+	display: none;
+}
+
+header nav .ioMenuMovil{
+	height: 25px;
+	width: 30px;
+	margin: 0 0 0 10px;
+	cursor: pointer;
+	line-height: 40px;
+	padding-top: 3px;
+
+
+}
+header nav .ioMenuMovil img{
+	width: 100%;
+}
+header nav #card_menu{
+	display: none;
+	position: relative;
+	width: 230px;
+	background: #2c3d4f;
+	top: -28px;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	z-index: 999;
+	padding-bottom: 50px;
+}
+
+header nav ul{
+	margin-top: 30px;
+}
+header nav ul li{
+	list-style: none;
+	font-size: 1.5em;
+	line-height: 38px;
+	font-weight: bold;
+}
+header nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+header #prev_section,
+header #next_section{
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 5px;
+	position: absolute;
+	top: 0;
+}
+
+header #prev_section{
+	right: 35px; 
+
+}
+
+header #next_section{
+	right: 5px;
+}
+
+header #prev_section img,
+header #next_section img{
+	width: 110%;
+	position: relative;
+	top: -2px;
+}
+
+header #prev_section img{
+	transform: rotate(180deg);
+}
+
+#slider{
+	position: relative;
+	width: 100%;
+	height: 82vh;
+}
+
+#slider section.slide{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+#slider #home{
+	/*background: #2c3d4f;*/
+	font-family: 'Raleway';
+	position: absolute;
+	text-align: center;
+	padding-bottom: 54px;
+	height: 100%;
+}
+
+#slider #home .mainAnimation{
+	width: 80%;
+	margin-left: 10%;
+	min-height: 300px;
+	position: absolute;
+}
+
+#slider #home .mainlogo{
+	background: none;
+	position: relative;
+	width: 50vw;
+	margin-left: 25%;
+	min-height: 365px;
+}
+
+#slider #home .mainlogo h2{
+	font-size: 1.2em;
+	color: white;
+	padding-top: 60px;
+	font-weight: bolder;
+	margin-top: 0;
+	}
+
+#slider #home .mainlogo strong{
+	font-size: 2em;
+	display: block;
+	font-weight: bold;
+	}
+#slider #home .mainlogo figure{
+	text-align: center;
+	width: 100%;
+	margin: 0;
+}
+#slider #home .mainlogo img{
+	width: 100%;
+	margin: 0;
+}
+
+#slider #home .buttonspage{
+	width: 100%;
+	text-align: center;
+}
+
+#slider #home .buttonspage > *{
+	display: inline-block;
+	width: 40%;
+	margin: 5px 2%;
+	color: white;
+	padding: 15px 15px;
+	margin-bottom: 7px;
+}
+
+#slider #home .buttonspage #contratame{
+	cursor: pointer;
+	background: #2c3d4f;
+	border: 2px solid #fff;
+	font-weight: bolder;
+}
+
+#slider #home .buttonspage #cv{
+	cursor: pointer;
+	background: #EE7738;
+	border: 2px solid #fff;
+	font-weight: bolder;
+}
+
+#contact_form{
+	position: absolute;
+	right: 0;
+	top:37px;
+	background: #fff;
+	width: 90%;
+	box-shadow: 0 0 3px #efefef;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	height: 90vh;
+	z-index: 999;
+	display: none;
+	overflow: auto;
+}
+
+#contact_form #close_form{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 85%;
+	top: 190px;
+}
+
+#contact_form figure{
+	height: 180px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: #EE7738;
+}
+
+#contact_form figure img{
+	margin: 0;
+	height: 100%;
+}
+
+#contact_form p{
+	margin: 20px;
+	width: 90%;
+}
+
+#contact_form input,
+#contact_form textarea{
+	display: block;
+	margin: 20px;
+	border: none;
+	border-bottom: solid 2px gray;
+	width: 85%;
+	padding-bottom: 3px;
+	margin-bottom: 40px;
+	font-weight: bold;
+
+}
+
+#contact_form #close_form:hover{
+	cursor: pointer;
+}
+#contact_form #close_form:before{
+	font-family: 'icomoon';
+	content: "\ea0f";
+	position: relative;
+	top: 5px;
+	left: 7px;
+}
+
+#contact_form #button{
+	background: #F59D2A;
+	color: #fff;
+	border: none;
+	padding: 8px 0;
+	border-radius: 5px;
+
+}
+
+#contact_button{
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background: #2c3d4f;
+	position: fixed;
+	right: 10px;
+	top : 60vh;
+	color: white;
+	z-index: 80;
+	border: solid 2px white;
+}
+#contact_button:hover{
+	cursor: pointer;
+}
+#contact_button:before{
+	font-family:'icomoon';
+	content: "\ea84";
+	position: relative;
+	font-size: 2em;
+	top:13px;
+	left: 14px;
+}
+
+footer{
+	width: 100%;
+	background: black;
+	text-align: center;
+	z-index: 90;
+	color: white;
+	height: 140px;
+	position: fixed;
+	bottom: -128px;
+	/*bottom: 0;*/
+	transition-duration: 0.6s;
+}
+
+footer:hover{
+	bottom: 0px;
+}
+
+footer .arrow_footer{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	margin-left: -40px;
+	color: white;
+	background: black;
+	margin-top: -30px;
+	border-radius: 50%;
+	font-size: 2em;
+	text-align: center;
+}
+
+footer .arrow_footer img{
+	width: 60%;
+	transform: rotate(270deg);
+}
+
+footer .rrss{
+		margin-top: 50px;
+		width: 100%;
+		height: 40px;
+		margin-bottom: 10px;
+}
+
+footer .rrss a{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	position: relative;
+}
+footer .rrss a:before{
+	color: orange;
+	position: absolute;
+	font-size: 2em;
+	top: 2px;
+	left: 5px;
+	font-family: 'icomoon';
+}
+
+footer .rrss a:hover:before{
+	color: white;
+	fon
+}
+
+footer .rrss a:nth-child(1):before{
+	content: "\ea90";
+}
+footer .rrss a:nth-child(2):before{
+	content: "\ea93";
+}
+footer .rrss a:nth-child(3):before{
+	content: "\eab0";
+}
+footer .rrss a:nth-child(4):before{
+	content: "\e942";
+}
+
+footer p{
+	display: inline-block;
+	font-size: 0.8em;
+}
+
+#rrss_whatsapp{
+
+	display: none;
+	width: 100%;
+	background: rgba(0,0,0,.43);
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	z-index: 9998;
+	text-align: center;
+	transition: color 0.8s linear 0.2s;
+	overflow: hidden;
+}
+
+.rrss_box{
+	position: relative;
+	top: 20%;
+	display: block;
+ 	width: 70%;
+  	padding: 1.5rem;
+  	border: none; 
+  	margin: 1rem auto; 
+  	font-size: 1.3rem;
+  	background: black;
+  	color: white;
+  	border-radius: 3px; 
+  	transition: .3s background;
+  	z-index: 9999;
+  	border-radius: 10px;
+  	overflow: hidden
+
+}
+.close_box{
+	width: 25px;
+	height: 25px;
+	color: white;
+	position: absolute;
+	top: 7px;
+	right:  7px;
+	cursor: pointer;
+
+}
+.close_box:before{
+	font-family: 'icomoon';
+	content: "\ea0f";
+	position: relative;
+	top: 2px;
+	left: 0px;
+	color: white;
+}
+#rrss_whatsapp p{
+	font-size: 1.25em;
+}
+#rrss_whatsapp .whatsapp{
+	width: 60px;
+	height: 60px;
+	position: relative;
+	left: 50%;
+	margin-left: -30px;
+	margin-bottom: 20px;
+}
+#rrss_whatsapp strong{
+	font-size: 2em;
+}
+
+#rrss_whatsapp .whatsapp:before{
+	font-family: 'icomoon';
+	content: "\ea93";
+	font-size: 2.5em;
+	color: orange;
+}
+
+
+
+
+@media screen and (min-width: 480px){
+	body{
+		background: red;
+	}
+
+	
+
+}
+
+@media screen and (min-width: 600px){
+	body{
+		background: #F59d2a;
+		background-image: radial-gradient(circle, #FFC165 0%, #FA9026 50%, #FB6C1F 100%);
+	}
+}
+
+@media screen and (min-width: 767px){
+	header{
+		height: 50px;
+	}
+
+
+	header h1{
+		display: inline-block;
+		width: 20%;
+		margin: 0;
+		height: 50px;
+		margin-left: 80px;
+		line-height: 50px;
+		min-width: 200px;
+		overflow: hidden;
+	}
+	header h1> *{
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+		font-size: 0.8em;
+		margin: 0px 3px;
+
+	}
+
+	header nav{
+		display: inline-block;
+		width: 60%;
+		position: relative;
+		/*vertical-align: middle;*/
+	}
+
+	header nav #showMenu,
+	header nav #hideMenu{
+		display: none;
+	}
+	header nav #card_menu{
+		display: inline-block;
+		border: 0;
+		background: none;
+		position: relative;
+		top: 0;
+		width: 100%;
+		text-align: right;
+		padding-bottom: 0;
+	}
+	header nav #card_menu figure{
+		display: none;
+	}
+
+	header nav #card_menu ul{
+		padding: 0;
+		margin: 0;
+		position: relative;
+		top: 0;
+		overflow: hidden;
+	}
+	header nav #card_menu ul li{
+		display: inline-block;
+		width: 100px;
+		text-align: center;
+		font-size: 1.3em;
+		margin: 0;
+		line-height: 50px;
+		/*background: red;*/
+	}
+	header #prev_section,
+	header #next_section{
+		border: solid 2px white;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		background: #EE7738;
+		right: 40px;
+		z-index: 999;
+		border-radius: 50%;
+	}
+	header #prev_section{
+		top: 115px;
+	}
+	header #next_section{
+		top: 190px;
+	}
+	header #prev_section img,
+	header #next_section img{
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	#slider #home .mainlogo img{
+	width: 70%;
+	margin: 0;
+
+}
+	#slider #home .buttonspage > *{
+	display: inline-block;
+	width: 17%;
+	margin-left: 5px 5%;
+	color: white;
+	padding: 15px 10px;
+	}
+
+	#contact_form{
+		top: 52px;
+		width: 400px;
+	}
+
+	#contact_button{
+	right: 40px;
+	}
+
+	footer{
+	bottom: -124px;
+	
+	}
+
+	.rrss_box{
+	top: 30%;
+	padding: 40px;
+  	}
+
+}
+
+
+
+@import "lesshat";
+
+#Clouds {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  height: 30%;
+  overflow: hidden;
+  animation: FadeIn 3s ease-out;
+  user-select: none;
+}
+
+@keyframes FadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@duration: 120s;
+
+.Cloud { 
+  position: absolute;
+  width: 100%;
+  //outline: solid 1px #F00;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 70px;
+  animation-duration: @duration;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: Float, FadeFloat;
+  z-index: 1;
+}
+
+@height: 10%;
+
+.Cloud.Foreground { 
+  height: @height;
+  min-height: 20px;
+  z-index: 3;
+}
+.Cloud.Background { 
+  height: @height / 1.1; 
+  min-height: 8px;
+  animation-duration: @duration * 1.75;
+  //animation-delay: -2s;
+}
+
+@keyframes Float {
+  from { transform: translateX(100%) translateZ(0); }
+  to { transform: translateX(-15%) translateZ(0); }
+}
+
+/*
+@keyframes Float {
+  from { transform: translateX(100%) translateY(-100%) translateZ(0); }
+  50% { transform: translateX(55%) translateY(0) translateZ(0); }
+  to { transform: translateX(-5%) translateY(-100%) translateZ(0); }
+}
+*/
+
+@keyframes FadeFloat {
+  0%, 100% { opacity: 0; }
+  5%, 90% { opacity: 1; }
+}
+
+
+

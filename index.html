@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<title>Brahma-Web</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<script src="js/modernizr-custom.js"></script>
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" type="text/css" href="css/design.css">
+	<script src="js/resize.js"></script>
+	<script type="text/javascript">
+		function pageScroll() {
+    	window.scrollTo(0,document.body.scrollHeight);}
+	</script>
+	
+</head>
+<body onLoad="pageScroll()">
+	<header>
+		<h1>
+			<a href="index.html">Brahma Web Design</a>
+		</h1>
+
+		<nav id="ioMenu">
+			<figure id="showMenu" class="ioMenuMovil" onclick="showMenu()">
+				<img src="images/menu.png" alt="">
+			</figure>
+
+			<div id="card_menu">
+				<figure id="hideMenu" class="ioMenuMovil" onclick="showMenu()">
+					<img src="images/menu.png" alt="">
+				</figure>
+				<!-- <figure><img src="images/brahma-trasnparent.png" alt=""></figure> -->
+				<ul>
+					<li><a onclick="navSection('home')" href="#">Home</a></li>
+					<li><a onclick="navSection('aboutme')" href="#">Sobre Mi</a></li>
+					<li><a onclick="navSection('portafolio')" href="#">Portafolio</a></li>
+					<li><a onclick="navSection('libre')" href="#">Libre</a></li>
+					<li><a onclick="displayFormContact('block')" href="#">Contacto</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="prev_section" onclick="displaySection('prev')"><img src="images/arrow.png" alt=""></div>
+		<div id="next_section" onclick="displaySection('next')"><img src="images/arrow.png" alt=""></div>
+	</header>
+
+	<div id="slider">
+		<section class="slide" id="home" style="display: block">
+		 	<div class="blob">	
+		 		
+		 	</div>
+			<div class="mainlogo">
+			
+
+			<h2>Brahma <strong>	Desarrollo Web</strong></h2>
+			<figure class="floating"><img src="images/brahma1res.png" alt=""></figure>
+			</div> 
+
+			<div class="buttonspage">
+				<div id="contratame" onclick="displayFormContact('block')">
+				CONTRATAME
+				</div>
+				<div id="cv" onclick="displayFormContact('block')">
+				DESCARGAR CV
+				</div>
+			</div>
+
+		</section>
+		<section class="slide" id="aboutme" style="display:none"></section>
+		<section class="slide" id="portafolio" style="display:none"></section>
+		<section class="slide" id="libre" style="display:none"></section>
+	</div>
+
+	<div id="contact_form">	
+		<form action="contact.php" id="contact" name="contact" method="post">
+			<div id="close_form" onclick="displayFormContact('none')">	</div>
+			<figure id="logo_mensaje">
+				<img src="iconos/sobre.png" alt="">
+			</figure>
+			<p>Contacto</p>
+			<input type="text" id="name" name="name" placeholder="Tu nombre">
+			<input type="text" id="email" name="email" placeholder="Tu email">
+			<textarea name="message" id="email" placeholder="Mensaje"></textarea>
+			<input type="submit" name="submit" id="button" value="ENVIAR">
+		</form>
+	</div>
+
+	
+
+	<div id="contact_button" onclick="displayFormContact('block')">	</div>
+
+	<footer>	
+		<div class="arrow_footer">
+			<img src="images/arrow.png" alt="">
+		</div>
+		<div class="rrss">	
+			<a href="#"></a>
+			<a onclick="displayrrssbox('block')"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+		<p>	2017 All rights reserved - Privacity Policy</p>
+	</footer>
+
+	<div id="rrss_whatsapp" >
+
+		<div class="rrss_box" id="rrss_box">
+			<div class="close_box" onclick="displayrrssbox('none')"></div>
+			<p>Enviame un Whats y me pondré en contacto lo antes posible:</p>
+			<div class="whatsapp"></div>
+			<strong>443-4844288</strong>
+			
+		</div>	
+		
+	</div>
+
+
+
+<script src="js/ioMenu.js"></script>
+<script src="js/slider.js"></script>
+<script type="text/javascript">
+
+	function displayrrssbox(nav){
+		var box = document.getElementById("rrss_whatsapp");
+		var insideBox = document.getElementById("rrss_box");
+		if(nav=='block'){
+		insideBox.classList.add('slideUp');
+		box.style.display = nav;
+		}
+		else{
+			box.style.display = nav;
+		// insideBox.classList.remove('slideUp');
+		// insideBox.classList.remove('slideUp1');
+		// insideBox.classList.add('slideUp1');
+		}
+	}
+</script>
+<script type="text/javascript">
+		function pageScroll() {
+    	window.scrollTo(0,document.body.scrollHeight);}
+	</script>
+</body>
+</html>
